@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>采证 · 采购成交信息工作台</title>
+    <meta
+      name="description"
+      content="使用元宝搜索发现公开采购公告，核对项目成交总额并保留来源依据。"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="brand" href="/"
+        ><span class="brand-icon">采</span
+        ><span>采证<small>采购成交信息工作台</small></span></a
+      >
+      <div class="nav-label">工作空间</div>
+      <button class="nav active" id="nav-query">
+        <span>⌕</span> 成交信息查询
+      </button>
+      <button class="nav" id="nav-history">
+        <span>◷</span> 查询历史 <b id="history-count">0</b>
+      </button>
+      <div class="sidebar-bottom">
+        <span class="version">OPEN SOURCE · v1.0</span>
+        <p>公开信息，有据可查。<br />项目总额，按口径核对。</p>
+        <a href="/docs" target="_blank" rel="noopener">接口文档 ↗</a>
+      </div>
+    </aside>
+    <main>
+      <header class="topbar">
+        <div class="breadcrumb">
+          工作空间 <span>/</span> <strong id="page-name">成交信息查询</strong>
+        </div>
+        <div class="connection" id="connection"><i></i> 正在连接服务</div>
+      </header>
+      <section id="query-view">
+        <div class="heading">
+          <div>
+            <div class="eyebrow">YUANBAO SEARCH · PROCUREMENT EVIDENCE</div>
+            <h1>查找成交记录，留下每一条依据</h1>
+            <p>从公开公告出发，核对项目总额，整理可回查的采购参考材料。</p>
+          </div>
+          <div class="heading-mark">
+            <span>搜</span> → <span>核</span> → <span>存</span>
+          </div>
+        </div>
+        <div class="workspace-grid">
+          <section class="card query-card">
+            <div class="section-title">
+              <h2><span class="step-no">01</span> 描述查询需求</h2>
+              <span class="subtle">一次任务，完整留痕</span>
+            </div>
+            <form id="query-form">
+              <fieldset class="mode-picker">
+                <legend class="sr-only">查询模式</legend>
+                <label
+                  ><input type="radio" name="mode" value="live" checked /><span
+                    ><b>实时查询</b><small>实际调用元宝搜索</small></span
+                  ></label
+                ><label
+                  ><input type="radio" name="mode" value="demo" /><span
+                    ><b>示例回放</b
+                    ><small>固定公开样本 · 不调用 API</small></span
+                  ></label
+                >
+              </fieldset>
+              <div id="mode-notice" class="inline-note" hidden></div>
+              <div class="fields">
+                <label class="wide"
+                  >货物或服务名称 <span class="required">*</span
+                  ><input
+                    name="keyword"
+                    id="keyword"
+                    value="智慧黑板"
+                    placeholder="例如：智慧黑板、台式电脑"
+                    minlength="2"
+                    maxlength="80"
+                    required /></label
+                ><label
+                  >地区<input
+                    name="region"
+                    id="region"
+                    value="江西"
+                    maxlength="40"
+                    placeholder="例如：江西" /></label
+                ><label
+                  >时间范围<select name="freshness" id="freshness">
+                    <option value="y2">近两年（接口相对范围）</option>
+                    <option value="y1">今年</option>
+                    <option value="y3">近三年</option>
+                    <option value="m6">近六个月</option>
+                    <option value="">不限</option>
+                  </select></label
+                ><label
+                  >检索来源<select name="site" id="site">
+                    <option value="">受支持的公开官方来源</option>
+                    <option value="ccgp.gov.cn">中国政府采购网</option>
+                    <option value="jxsggzy.cn">江西公共资源交易平台</option>
+                  </select></label
+                ><label
+                  >目标有效记录<select name="target" id="target">
+                    <option value="3">不少于 3 条</option>
+                    <option value="1">不少于 1 条</option>
+                    <option value="5">不少于 5 条</option>
+                    <option value="10">不少于 10 条</option>
+                  </select></label
+                >
+              </div>
+              <label class="checkbox"
+                ><input type="checkbox" id="expand-search" checked />
+                限定站点结果不足时，允许扩展至其他官方来源</label
+              >
+              <div class="form-footer">
+                <span>单次任务最多 2 次搜索请求；示例回放为零调用。</span
+                ><button class="primary" id="submit-btn" type="submit">
+                  开始查询 <span>→</span>
+                </button>
+              </div>
+            </form>
+          </section>
+          <aside class="card guide-card">
+            <div class="guide-icon">✓</div>
+            <h2>先找公告，再核对数字</h2>
+            <p>
+              同一页面可能包含预算、成交额和代理费。系统保留金额出处，帮你区分不同口径。
+            </p>
+            <ol>
+              <li><b>发现候选</b><span>由元宝搜索检索公开公告</span></li>
+              <li><b>检查正文</b><span>核对项目、日期与金额</span></li>
+              <li><b>交付材料</b><span>导出明细、依据与来源</span></li>
+            </ol>
+            <div class="guide-foot">
+              项目总额 ≠ 单台设备价格<br />规格、数量与采购包仍需业务复核
+            </div>
+          </aside>
+        </div>
+        <section class="card task-card" id="task-panel" hidden>
+          <div class="task-header">
+            <div>
+              <div class="section-title">
+                <h2><span class="step-no">02</span> 任务执行与结果</h2>
+                <span class="badge" id="task-status">等待执行</span
+                ><span class="badge replay" id="replay-badge" hidden
+                  >历史示例回放</span
+                >
+              </div>
+              <p class="task-meta" id="task-meta"></p>
+            </div>
+            <div class="export-actions">
+              <button class="secondary" id="preview-report" disabled>
+                查看报告 ↗</button
+              ><select id="export-format" aria-label="导出格式">
+                <option value="html">HTML 报告</option>
+                <option value="csv">CSV 明细</option>
+                <option value="json">JSON 记录</option></select
+              ><button class="primary small" id="export-btn" disabled>
+                导出
+              </button>
+            </div>
+          </div>
+          <div class="progress-line"><div id="progress-fill"></div></div>
+          <div class="stage-caption">
+            <span id="stage-text">准备任务</span><span id="elapsed-text"></span>
+          </div>
+          <div id="task-error" class="error-box" hidden></div>
+          <div id="task-notice" class="inline-note" hidden></div>
+          <div class="metrics">
+            <div><span>候选记录</span><b id="metric-candidates">0</b></div>
+            <div>
+              <span>金额核对通过</span
+              ><b class="green" id="metric-verified">0</b>
+            </div>
+            <div>
+              <span>待复核</span><b class="amber" id="metric-pending">0</b>
+            </div>
+            <div><span>不纳入 / 重复</span><b id="metric-other">0</b></div>
+          </div>
+          <div class="result-toolbar">
+            <div class="tabs" role="group" aria-label="筛选结果">
+              <button class="tab active" data-filter="all">全部</button
+              ><button class="tab" data-filter="verified">金额核对通过</button
+              ><button class="tab" data-filter="pending">待复核</button
+              ><button class="tab" data-filter="other">不纳入 / 重复</button>
+            </div>
+            <span id="result-count" class="subtle">0 条记录</span>
+          </div>
+          <div class="table-scroll">
+            <table class="results">
+              <thead>
+                <tr>
+                  <th>项目与公告</th>
+                  <th>项目成交总额</th>
+                  <th>核验状态</th>
+                  <th>来源 / 操作</th>
+                </tr>
+              </thead>
+              <tbody id="results-body"></tbody>
+            </table>
+          </div>
+          <div class="empty-state" id="empty-results">
+            <span>⌕</span><b>正在整理候选公告</b>
+            <p>有结果后将在这里展示，金额缺失或访问失败会保留原因。</p>
+          </div>
+          <details class="run-details" id="run-details">
+            <summary>查看执行记录与检索追踪</summary>
+            <div id="request-trace"></div>
+            <ol id="run-logs"></ol>
+          </details>
+        </section>
+        <div class="initial-empty" id="initial-empty">
+          <div class="paper-icon">▤</div>
+          <h3>从一个具体需求开始</h3>
+          <p>提交查询后，这里会展示候选公告、金额证据和最终报告。</p>
+        </div>
+      </section>
+      <section id="history-view" hidden>
+        <div class="heading">
+          <div>
+            <div class="eyebrow">TASK ARCHIVE</div>
+            <h1>每一次查询，都可以回看</h1>
+            <p>查看历史条件、处理状态和已保存的结果，继续核对或重新导出。</p>
+          </div>
+          <button class="secondary" id="refresh-history">刷新记录</button>
+        </div>
+        <div class="card history-list" id="history-list"></div>
+      </section>
+      <footer class="page-footer">
+        <span>采证 · 公开采购信息查询原型</span
+        ><span>元宝搜索提供公告发现能力 · MIT 开源许可</span>
+      </footer>
+    </main>
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="drawer" id="evidence-drawer" hidden aria-label="公告核验依据">
+      <button class="drawer-close" id="drawer-close" aria-label="关闭依据面板">
+        ×
+      </button>
+      <div class="eyebrow">SOURCE EVIDENCE</div>
+      <h2 id="evidence-title"></h2>
+      <div id="evidence-content"></div>
+    </aside>
+    <div id="toast" class="toast" role="status" hidden></div>
+    <dialog id="auth-dialog">
+      <form method="dialog" id="auth-form">
+        <h2>进入工作台</h2>
+        <p>此部署已设置访问口令。</p>
+        <input
+          id="app-token"
+          type="password"
+          autocomplete="current-password"
+          placeholder="工作台访问口令"
+          required
+        /><button class="primary">连接工作台</button>
+      </form>
+    </dialog>
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>

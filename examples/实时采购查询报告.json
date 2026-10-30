@@ -1,0 +1,309 @@
+{
+  "id": "0ce57d91ff9f4d53",
+  "created_at": "2026-10-30T16:58:33+08:00",
+  "updated_at": "2026-10-30T16:58:37+08:00",
+  "input": {
+    "keyword": "智慧黑板",
+    "region": "江西",
+    "freshness": "y2",
+    "site": "",
+    "target": 3,
+    "mode": "live",
+    "expand_search": true
+  },
+  "status": "completed",
+  "stage": "任务完成",
+  "progress": 100,
+  "records": [
+    {
+      "id": "55ad2f6bc2b2",
+      "title": "江西省机电设备招标有限公司关于鹰潭市第二中学北校区智慧黑板一体机采购项目(项目编号:JXTC2026110100)中标结果公示",
+      "url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202609/t20260915_27326366.htm",
+      "search_date": "2026/09/15 10:40:00",
+      "fetched_at": "2026-10-30T16:58:35+08:00",
+      "status": "verified",
+      "reason": "原文概要与正文金额一致，项目编号及日期已提取；规格仍需业务复核",
+      "evidence": [
+        "中标（成交）金额（元）\\（%）：529220.00",
+        "总中标金额\n￥52.922000 万元"
+      ],
+      "amount_yuan": "529220.00",
+      "summary_yuan": "529220.00",
+      "project_id": "JXTC2026110100",
+      "published_date": "2026-09-15",
+      "amount_kind": "项目成交总额",
+      "comparable_unit_price": false,
+      "snapshot_sha256": "3c9a08afe14328b994448d42625e6be9f4238afe06cc5c4dda4a19ae1d4a7022",
+      "mode": "live",
+      "final_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202609/t20260915_27326366.htm",
+      "notice_type": "result_candidate"
+    },
+    {
+      "id": "34798deaab87",
+      "title": "江西省文臻工程咨询有限公司关于进贤县文港镇初级中学智慧黑板采购项目(项目编号:JXWZ-WG-0723)竞争性磋商中标公告",
+      "url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202609/t20260914_27319389.htm",
+      "search_date": "2026/09/14 10:20:00",
+      "fetched_at": "2026-10-30T16:58:35+08:00",
+      "status": "verified",
+      "reason": "原文概要与正文金额一致，项目编号及日期已提取；规格仍需业务复核",
+      "evidence": [
+        "中标（成交）金额（元）\\（%）：289000.00",
+        "总中标金额\n￥28.900000 万元"
+      ],
+      "amount_yuan": "289000.00",
+      "summary_yuan": "289000.00",
+      "project_id": "JXWZ-WG-0723",
+      "published_date": "2026-09-14",
+      "amount_kind": "项目成交总额",
+      "comparable_unit_price": false,
+      "snapshot_sha256": "bf5edbd0f7b9e57826fe27a7c5e420d125f5147febe24aecbb88e933985522d4",
+      "mode": "live",
+      "final_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202609/t20260914_27319389.htm",
+      "notice_type": "result_candidate"
+    },
+    {
+      "id": "ca42008a4ef4",
+      "title": "优序建设集团有限公司关于宁都技师学院智慧黑板采购项目项目(项目编号:YXJS2026-ND-C002)中标(成交)结果公告",
+      "url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202609/t20260911_27310523.htm",
+      "search_date": "2026/09/11 12:20:00",
+      "fetched_at": "2026-10-30T16:58:35+08:00",
+      "status": "verified",
+      "reason": "原文概要与正文金额一致，项目编号及日期已提取；规格仍需业务复核",
+      "evidence": [
+        "中标（成交）金额（元）\\（%）：862650.00",
+        "总中标金额\n￥86.265000 万元"
+      ],
+      "amount_yuan": "862650.00",
+      "summary_yuan": "862650.00",
+      "project_id": "YXJS2026-ND-C002",
+      "published_date": "2026-09-11",
+      "amount_kind": "项目成交总额",
+      "comparable_unit_price": false,
+      "snapshot_sha256": "d0edaf923fb02c9d5b9bee7c75634ef88aff1d299e1b5a848fbb19e0dcd4e11e",
+      "mode": "live",
+      "final_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202609/t20260911_27310523.htm",
+      "notice_type": "result_candidate"
+    },
+    {
+      "id": "850312b7c4af",
+      "title": "[江西省公共资源交易平台]江西鑫中建工程管理咨询有限公司关于宜黄县实验小学智慧黑板等教学设备采购中标(成交)结果公告",
+      "url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202511/t20251111_25675964.htm",
+      "search_date": "2025/11/11 17:45:00",
+      "fetched_at": "2026-10-30T16:58:36+08:00",
+      "status": "pending",
+      "reason": "未确认总价成交口径，可能为费率或其他报价方式",
+      "evidence": [],
+      "amount_yuan": null,
+      "summary_yuan": null,
+      "project_id": "JXXZJ2025-013（YH2025-25）",
+      "published_date": "2025-11-11",
+      "amount_kind": "项目成交总额",
+      "comparable_unit_price": false,
+      "snapshot_sha256": "254728232baca8fbeaaef667e2628d0d0ab1811a9e8994f4944cd0343c4c561f",
+      "mode": "live",
+      "final_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202511/t20251111_25675964.htm",
+      "notice_type": "result_candidate"
+    },
+    {
+      "id": "ef838dea2d45",
+      "title": "[江西省公共资源交易平台]赣江新区高级中学采购智慧黑板及计算机机房设备项目JXTC2025040239-04结果公示",
+      "url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202601/t20260111_26062406.htm",
+      "search_date": "2026/01/11 15:21:00",
+      "fetched_at": "2026-10-30T16:58:36+08:00",
+      "status": "pending",
+      "reason": "未确认总价成交口径，可能为费率或其他报价方式",
+      "evidence": [],
+      "amount_yuan": null,
+      "summary_yuan": null,
+      "project_id": "JXTC2025040239-04",
+      "published_date": "2026-01-11",
+      "amount_kind": "项目成交总额",
+      "comparable_unit_price": false,
+      "snapshot_sha256": "57a6e78ffd05ebe34ae15e2582a31a9740b7e94c8f99fba84fe99d2d3ae3d8d2",
+      "mode": "live",
+      "final_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202601/t20260111_26062406.htm",
+      "notice_type": "result_candidate"
+    },
+    {
+      "id": "945dec7789b2",
+      "title": "[江西省公共资源交易平台]进贤县第二初级中学智慧黑板和机房设备采购项目(第二次)成交公示",
+      "url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202601/t20260109_26060843.htm",
+      "search_date": "2026/01/09 18:45:00",
+      "fetched_at": "2026-10-30T16:58:36+08:00",
+      "status": "verified",
+      "reason": "原文概要与正文金额一致，项目编号及日期已提取；规格仍需业务复核",
+      "evidence": [
+        "中标（成交）金额（元）\\（%）：2338340.00",
+        "总中标金额\n￥233.834000 万元"
+      ],
+      "amount_yuan": "2338340.00",
+      "summary_yuan": "2338340.00",
+      "project_id": "JZGC-ZC202510001",
+      "published_date": "2026-01-09",
+      "amount_kind": "项目成交总额",
+      "comparable_unit_price": false,
+      "snapshot_sha256": "d2a1f31613ee0a8a3de6c87db5d38a3ddeafa60c2e50b4412ac469e722cf912a",
+      "mode": "live",
+      "final_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202601/t20260109_26060843.htm",
+      "notice_type": "result_candidate"
+    },
+    {
+      "id": "021d5711c480",
+      "title": "[进贤县]江西省文臻工程咨询有限公司关于进贤县文港镇初级中学智慧黑板采购项目(项目编号:JXWZ-WG-0723)竞争性磋商中标公告",
+      "url": "https://www.jxsggzy.cn/jyxx/002006/002006004/20260914/5db05ee0-b984-43cc-8606-bb4859ceeadb.html",
+      "search_date": "2026/09/14 00:00:00",
+      "fetched_at": "",
+      "status": "pending",
+      "reason": "原站访问失败：SSLError",
+      "evidence": [],
+      "amount_yuan": null,
+      "summary_yuan": null,
+      "project_id": "",
+      "published_date": "",
+      "amount_kind": "项目成交总额",
+      "comparable_unit_price": false,
+      "snapshot_sha256": "",
+      "mode": "live"
+    },
+    {
+      "id": "8ba84672f892",
+      "title": "[进贤县]江西恒品建设工程管理有限公司关于进贤县第一中学购置智慧黑板采购项目(项目编号:JXHP-2025-CG207)结果公示",
+      "url": "https://ggzy.jiangxi.gov.cn/jyxx/002006/002006004/20251119/f7652980-7fb7-48cf-bc4e-f063336ba5e9.html",
+      "search_date": "2025/11/19 00:00:00",
+      "fetched_at": "",
+      "status": "pending",
+      "reason": "原站访问失败：SSLError",
+      "evidence": [],
+      "amount_yuan": null,
+      "summary_yuan": null,
+      "project_id": "",
+      "published_date": "",
+      "amount_kind": "项目成交总额",
+      "comparable_unit_price": false,
+      "snapshot_sha256": "",
+      "mode": "live"
+    },
+    {
+      "id": "788fa563a09d",
+      "title": "遂川县泉江小学荧屏校区智慧黑板采购项目第二次",
+      "url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202511/t20251126_25768841.htm",
+      "search_date": "2025/11/26 11:45:00",
+      "fetched_at": "2026-10-30T16:58:37+08:00",
+      "status": "verified",
+      "reason": "原文概要与正文金额一致，项目编号及日期已提取；规格仍需业务复核",
+      "evidence": [
+        "中标（成交）金额（元）\\（%）：626652.00",
+        "总中标金额\n￥62.665200 万元"
+      ],
+      "amount_yuan": "626652.00",
+      "summary_yuan": "626652.00",
+      "project_id": "遂政采[2025]C051-1号",
+      "published_date": "2025-11-26",
+      "amount_kind": "项目成交总额",
+      "comparable_unit_price": false,
+      "snapshot_sha256": "70765bc326b59905a50b219b2f0bb9f0c83141ccc694dabffd54750b5ecfe65d",
+      "mode": "live",
+      "final_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202511/t20251126_25768841.htm",
+      "notice_type": "unknown"
+    },
+    {
+      "id": "04f2d9ef9448",
+      "title": "[江西省公共资源交易平台]宁都技师学院教室､实训室智慧黑板项目",
+      "url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202512/t20251201_25816338.htm",
+      "search_date": "2025/12/01 10:45:00",
+      "fetched_at": "2026-10-30T16:58:37+08:00",
+      "status": "verified",
+      "reason": "原文概要与正文金额一致，项目编号及日期已提取；规格仍需业务复核",
+      "evidence": [
+        "中标（成交）金额（元）\\（%）：644612.00",
+        "总中标金额\n￥64.461200 万元"
+      ],
+      "amount_yuan": "644612.00",
+      "summary_yuan": "644612.00",
+      "project_id": "NDCG2025141-3",
+      "published_date": "2025-12-01",
+      "amount_kind": "项目成交总额",
+      "comparable_unit_price": false,
+      "snapshot_sha256": "5601ef57def7142e792b250bb2e1f3865b6013845793803982c59227be16e296",
+      "mode": "live",
+      "final_url": "https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202512/t20251201_25816338.htm",
+      "notice_type": "unknown"
+    }
+  ],
+  "requests": [
+    {
+      "payload": {
+        "Query": "江西 智慧黑板 中标 成交公告",
+        "Freshness": "y2"
+      },
+      "request_id": "fd90365b-263d-4668-8543-b4c5aa7ea178",
+      "version": "standard",
+      "elapsed_seconds": 1.332,
+      "queried_at": "2026-10-30T16:58:35.135652+08:00",
+      "replayed": false
+    }
+  ],
+  "logs": [
+    {
+      "time": "2026-10-30T16:58:33+08:00",
+      "message": "实时查询使用元宝搜索；示例回放不发起外部请求。"
+    },
+    {
+      "time": "2026-10-30T16:58:35+08:00",
+      "message": "新增 10 条候选，将读取原文并检查金额。"
+    },
+    {
+      "time": "2026-10-30T16:58:35+08:00",
+      "message": "1/10：江西省机电设备招标有限公司关于鹰潭市第二中学北校区智慧黑板一体机采购项目(项目编 · 原文概要与正文金额一致，项目编号及日期已提取；规格仍需业务复核"
+    },
+    {
+      "time": "2026-10-30T16:58:35+08:00",
+      "message": "2/10：江西省文臻工程咨询有限公司关于进贤县文港镇初级中学智慧黑板采购项目(项目编号:J · 原文概要与正文金额一致，项目编号及日期已提取；规格仍需业务复核"
+    },
+    {
+      "time": "2026-10-30T16:58:35+08:00",
+      "message": "3/10：优序建设集团有限公司关于宁都技师学院智慧黑板采购项目项目(项目编号:YXJS20 · 原文概要与正文金额一致，项目编号及日期已提取；规格仍需业务复核"
+    },
+    {
+      "time": "2026-10-30T16:58:36+08:00",
+      "message": "4/10：[江西省公共资源交易平台]江西鑫中建工程管理咨询有限公司关于宜黄县实验小学智慧黑 · 未确认总价成交口径，可能为费率或其他报价方式"
+    },
+    {
+      "time": "2026-10-30T16:58:36+08:00",
+      "message": "5/10：[江西省公共资源交易平台]赣江新区高级中学采购智慧黑板及计算机机房设备项目JXT · 未确认总价成交口径，可能为费率或其他报价方式"
+    },
+    {
+      "time": "2026-10-30T16:58:36+08:00",
+      "message": "6/10：[江西省公共资源交易平台]进贤县第二初级中学智慧黑板和机房设备采购项目(第二次) · 原文概要与正文金额一致，项目编号及日期已提取；规格仍需业务复核"
+    },
+    {
+      "time": "2026-10-30T16:58:36+08:00",
+      "message": "7/10：[进贤县]江西省文臻工程咨询有限公司关于进贤县文港镇初级中学智慧黑板采购项目(项 · 原站访问失败：SSLError"
+    },
+    {
+      "time": "2026-10-30T16:58:37+08:00",
+      "message": "8/10：[进贤县]江西恒品建设工程管理有限公司关于进贤县第一中学购置智慧黑板采购项目(项 · 原站访问失败：SSLError"
+    },
+    {
+      "time": "2026-10-30T16:58:37+08:00",
+      "message": "9/10：遂川县泉江小学荧屏校区智慧黑板采购项目第二次 · 原文概要与正文金额一致，项目编号及日期已提取；规格仍需业务复核"
+    },
+    {
+      "time": "2026-10-30T16:58:37+08:00",
+      "message": "10/10：[江西省公共资源交易平台]宁都技师学院教室､实训室智慧黑板项目 · 原文概要与正文金额一致，项目编号及日期已提取；规格仍需业务复核"
+    },
+    {
+      "time": "2026-10-30T16:58:37+08:00",
+      "message": "核对通过 6 条，待复核 4 条。"
+    }
+  ],
+  "error": null,
+  "elapsed_seconds": 3.666,
+  "stats": {
+    "candidates": 10,
+    "verified": 6,
+    "pending": 4,
+    "excluded": 0,
+    "duplicate": 0
+  }
+}

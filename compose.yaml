@@ -1,0 +1,16 @@
+services:
+  workbench:
+    build: .
+    ports:
+      - "127.0.0.1:${PORT:-8000}:8000"
+    environment:
+      YUANBAO_API_KEY: ${YUANBAO_API_KEY:-}
+      yuanbao_search: ${yuanbao_search:-}
+      APP_ACCESS_TOKEN: ${APP_ACCESS_TOKEN:-}
+      USE_ENV_PROXY: ${USE_ENV_PROXY:-true}
+      DATA_DIR: /data
+    volumes:
+      - procurement-data:/data
+    restart: unless-stopped
+volumes:
+  procurement-data:
